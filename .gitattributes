@@ -1,0 +1,2 @@
+Build/meme-app.wasm filter=lfs diff=lfs merge=lfs -text
+Build/MemeWebGL.wasm filter=lfs diff=lfs merge=lfs -text
