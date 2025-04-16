@@ -53,12 +53,14 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/meme-app.loader.js";
+      var t = "?t=" + Date.now();
+
+      var loaderUrl = buildUrl + "/meme-app.loader.js" + t;
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/meme-app.data",
-        frameworkUrl: buildUrl + "/meme-app.framework.js",
-        codeUrl: buildUrl + "/meme-app.wasm",
+        dataUrl: buildUrl + "/meme-app.data" + t,
+        frameworkUrl: buildUrl + "/meme-app.framework.js" + t,
+        codeUrl: buildUrl + "/meme-app.wasm" + t,
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Skybull",
         productName: "skybull-hybrid-casual-framwork1",
